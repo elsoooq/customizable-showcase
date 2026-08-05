@@ -6,7 +6,7 @@ export function OrderForm() {
   const [qty, setQty] = useState(1);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [gov, setGov] = useState(governorates[0]);
+  const [gov, setGov] = useState(governorates[0]!);
   const [address, setAddress] = useState("");
   const [notes, setNotes] = useState("");
   const [error, setError] = useState("");
