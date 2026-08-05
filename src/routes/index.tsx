@@ -75,12 +75,12 @@ function Index() {
 
         <div className="grid grid-cols-3 gap-3 text-center">
           {[
-            { icon: Truck, t: "شحن مجاني", c: "lux-emerald" },
-            { icon: Undo2, t: "استرجاع 14 يوم", c: "lux-sky" },
-            { icon: BadgeCheck, t: "ضمان سنة", c: "lux-rose" },
-          ].map(({ icon: Icon, t, c }) => (
+            { icon: Truck, t: "شحن مجاني", c: "lux-emerald", i: "text-whatsapp" },
+            { icon: Undo2, t: "استرجاع 14 يوم", c: "lux-sky", i: "text-facebook" },
+            { icon: BadgeCheck, t: "ضمان سنة", c: "lux-rose", i: "text-primary" },
+          ].map(({ icon: Icon, t, c, i }) => (
             <div key={t} className={`lux ${c} gilt-line rounded-2xl px-2 py-3`}>
-              <Icon className="mx-auto size-5 text-primary" />
+              <Icon className={`mx-auto size-5 ${i}`} />
               <span className="mt-1 block text-xs font-bold">{t}</span>
             </div>
           ))}
