@@ -45,7 +45,7 @@ function Index() {
       <main className="mx-auto max-w-3xl space-y-6 px-4">
         <Gallery />
 
-        <div className="space-y-4">
+        <div className="lux lux-gold gilt-line space-y-4 rounded-3xl p-5">
           <h1 className="text-2xl leading-tight sm:text-3xl">{product.name}</h1>
 
           <div className="flex flex-wrap items-end gap-3">
@@ -64,7 +64,7 @@ function Index() {
           </span>
         </div>
 
-        <dl className="divide-y divide-border overflow-hidden rounded-3xl border border-border bg-card">
+        <dl className="lux lux-royal gilt-line divide-y divide-border/60 overflow-hidden rounded-3xl">
           {specs.map((s) => (
             <div key={s.k} className="flex items-center justify-between px-5 py-3 text-sm">
               <dt className="text-muted-foreground">{s.k}</dt>
@@ -75,11 +75,11 @@ function Index() {
 
         <div className="grid grid-cols-3 gap-3 text-center">
           {[
-            { icon: Truck, t: "شحن مجاني" },
-            { icon: Undo2, t: "استرجاع 14 يوم" },
-            { icon: BadgeCheck, t: "ضمان سنة" },
-          ].map(({ icon: Icon, t }) => (
-            <div key={t} className="rounded-2xl border border-border bg-card px-2 py-3">
+            { icon: Truck, t: "شحن مجاني", c: "lux-emerald" },
+            { icon: Undo2, t: "استرجاع 14 يوم", c: "lux-sky" },
+            { icon: BadgeCheck, t: "ضمان سنة", c: "lux-rose" },
+          ].map(({ icon: Icon, t, c }) => (
+            <div key={t} className={`lux ${c} gilt-line rounded-2xl px-2 py-3`}>
               <Icon className="mx-auto size-5 text-primary" />
               <span className="mt-1 block text-xs font-bold">{t}</span>
             </div>
