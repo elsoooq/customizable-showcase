@@ -3,7 +3,7 @@ import { product } from "@/data/product";
 
 export function Gallery() {
   const [active, setActive] = useState(0);
-  const current = product.gallery[active];
+  const current = product.gallery[active] ?? product.gallery[0]!;
 
   return (
     <div className="space-y-3">

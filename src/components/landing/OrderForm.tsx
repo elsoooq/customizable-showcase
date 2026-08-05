@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { governorates, product, site, variants } from "@/data/product";
 
 export function OrderForm() {
-  const [variant, setVariant] = useState(variants.options[0].id);
+  const [variant, setVariant] = useState(variants.options[0]!.id);
   const [qty, setQty] = useState(1);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
