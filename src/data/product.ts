@@ -16,6 +16,16 @@ export const site = {
   currency: "جنيه",
 };
 
+/** 📞 شريط التواصل — عدّل الروابط والأسماء من هنا */
+export const contacts = {
+  title: "محتاج مساعدة؟ كلمنا",
+  items: [
+    { id: "whatsapp", label: "واتساب", value: "201000000000", href: "https://wa.me/201000000000" },
+    { id: "facebook", label: "فيسبوك", value: "SecureShop", href: "https://facebook.com/" },
+    { id: "phone", label: "اتصال", value: "01000000000", href: "tel:+201000000000" },
+  ],
+};
+
 export const product = {
   name: "كاميرا مراقبة صغيرة — واي فاي HD",
   subtitle: "كاميرا في حجم علبة الكبريت، تشوف بيتك أو شغلك من موبايلك في أي وقت.",
@@ -43,7 +53,6 @@ export const variants = {
   label: "اختار الباكدج",
   options: [
     { id: "single", name: "كاميرا واحدة", extra: 0, note: "الأساسي" },
-    { id: "memory", name: "كاميرا + ميموري 32 جيجا", extra: 150, note: "الأفضل" },
     { id: "double", name: "كاميرتين", extra: 750, note: "وفّر 250 جنيه" },
   ],
 };
