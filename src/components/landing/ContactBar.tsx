@@ -27,22 +27,22 @@ function PhoneLogo(props: React.SVGProps<SVGSVGElement>) {
 }
 
 const brands = {
-  whatsapp: { Logo: WhatsAppLogo, ring: "text-whatsapp", chip: "bg-whatsapp/12" },
-  facebook: { Logo: FacebookLogo, ring: "text-facebook", chip: "bg-facebook/12" },
-  phone: { Logo: PhoneLogo, ring: "text-call", chip: "bg-call/12" },
+  whatsapp: { Logo: WhatsAppLogo, ring: "text-whatsapp", chip: "bg-whatsapp/15 ring-1 ring-whatsapp/30" },
+  facebook: { Logo: FacebookLogo, ring: "text-facebook", chip: "bg-facebook/15 ring-1 ring-facebook/30" },
+  phone: { Logo: PhoneLogo, ring: "text-call", chip: "bg-call/15 ring-1 ring-call/30" },
 } as const;
 
 export function ContactBar() {
   return (
-    <section className="overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
-      <div className="border-b border-border px-5 py-4 text-center">
+    <section className="lux lux-amber gilt-line overflow-hidden rounded-3xl">
+      <div className="border-b border-border/60 px-5 py-4 text-center">
         <h2 className="text-base font-extrabold">{contacts.title}</h2>
         <p className="mt-1 text-xs text-muted-foreground">
           فريق خدمة العملاء متاح للرد على استفسارك
         </p>
       </div>
 
-      <div className="divide-y divide-border sm:grid sm:grid-cols-3 sm:divide-x sm:divide-y-0 sm:divide-x-reverse">
+      <div className="divide-y divide-border/60 sm:grid sm:grid-cols-3 sm:divide-x sm:divide-y-0 sm:divide-x-reverse">
         {contacts.items.map((c) => {
           const brand = brands[c.id as keyof typeof brands] ?? brands.whatsapp;
           const { Logo } = brand;

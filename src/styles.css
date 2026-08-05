@@ -122,6 +122,68 @@
   box-shadow: var(--shadow-ember);
 }
 
+/* ✨ كروت فخمة بألوان داخلية مختلفة */
+@utility lux {
+  position: relative;
+  border: 1px solid color-mix(in oklab, var(--lux-tint) 40%, var(--border));
+  background-image:
+    linear-gradient(
+      160deg,
+      color-mix(in oklab, var(--lux-tint) 30%, var(--card)),
+      color-mix(in oklab, var(--lux-tint) 10%, var(--card)) 60%,
+      var(--card)
+    ),
+    radial-gradient(
+      120% 80% at 100% 0%,
+      color-mix(in oklab, var(--lux-tint) 32%, transparent),
+      transparent 65%
+    );
+  box-shadow:
+    inset 0 1px 0 color-mix(in oklab, var(--lux-tint) 45%, transparent),
+    0 22px 50px -34px color-mix(in oklab, var(--lux-tint) 60%, transparent);
+}
+
+@utility lux-amber {
+  --lux-tint: oklch(0.75 0.16 68);
+}
+
+@utility lux-emerald {
+  --lux-tint: oklch(0.7 0.14 165);
+}
+
+@utility lux-royal {
+  --lux-tint: oklch(0.62 0.17 268);
+}
+
+@utility lux-rose {
+  --lux-tint: oklch(0.66 0.16 12);
+}
+
+@utility lux-gold {
+  --lux-tint: oklch(0.8 0.13 92);
+}
+
+@utility lux-sky {
+  --lux-tint: oklch(0.7 0.13 225);
+}
+
+@utility gilt-line {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset-inline: 12%;
+    top: 0;
+    height: 1px;
+    background-image: linear-gradient(
+      90deg,
+      transparent,
+      color-mix(in oklab, var(--lux-tint, var(--primary)) 75%, transparent),
+      transparent
+    );
+  }
+}
+
 @utility shadow-soft {
   box-shadow: var(--shadow-card);
 }
