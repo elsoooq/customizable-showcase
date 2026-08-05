@@ -38,6 +38,9 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-whatsapp: var(--whatsapp);
+  --color-facebook: var(--facebook);
+  --color-call: var(--call);
   --font-display: "Tajawal", "Cairo", system-ui, sans-serif;
   --font-sans: "Cairo", system-ui, sans-serif;
 }
@@ -75,6 +78,9 @@
   );
   --shadow-ember: 0 18px 50px -18px color-mix(in oklab, var(--primary) 55%, transparent);
   --shadow-card: 0 20px 50px -30px oklch(0 0 0 / 0.9);
+  --whatsapp: oklch(0.72 0.19 152);
+  --facebook: oklch(0.55 0.21 258);
+  --call: oklch(0.68 0.19 45);
 }
 
 @layer base {
