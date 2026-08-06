@@ -4,6 +4,7 @@ import { BadgeCheck, Truck, Undo2, X } from "lucide-react";
 import { Gallery } from "@/components/landing/Gallery";
 import { OrderForm } from "@/components/landing/OrderForm";
 import { ContactBar } from "@/components/landing/ContactBar";
+import { YouTubeCard } from "@/components/landing/YouTubeCard";
 import { product, site, specs } from "@/data/product";
 
 export const Route = createFileRoute("/")({
