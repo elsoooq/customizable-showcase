@@ -11,8 +11,8 @@ import boxImg from "@/assets/camera-box.jpg";
 export const site = {
   brand: "elsoooq",
   tagline: "تسوق أونلاين بثقة",
-  whatsapp: "201000000000", // رقم الواتساب بصيغة دولية بدون +
-  phone: "01000000000",
+  whatsapp: "20102277100", // رقم الواتساب بصيغة دولية بدون +
+  phone: "01022077100",
   currency: "جنيه",
 };
 
@@ -21,9 +21,9 @@ export const contacts = {
   title: "تواصل معنا",
   subtitle: "فريق خدمة العملاء جاهز لمساعدتك",
   items: [
-    { id: "whatsapp", label: "واتساب", description: "رد سريع على استفسارك", href: "https://wa.me/201000000000" },
-    { id: "facebook", label: "فيسبوك", description: "تابعنا لأحدث العروض", href: "https://facebook.com/" },
-    { id: "phone", label: "اتصال", description: "تحدث مباشرة مع أحد المختصين", href: "tel:+201000000000" },
+    { id: "whatsapp", label: "واتساب", description: "رد سريع على استفسارك", href: "https://wa.me/201022077100" },
+    { id: "facebook", label: "فيسبوك", description: "تابعنا لأحدث العروض", href: "https://facebook.com/elsoooqshop" },
+    { id: "phone", label: "اتصال", description: "تحدث مباشرة مع أحد المختصين", href: "tel:+201022077100" },
   ],
 };
 
@@ -37,10 +37,10 @@ export const video = {
 export const product = {
   name: "كاميرا مراقبة صغيرة — واي فاي HD",
   subtitle: "كاميرا في حجم علبة الكبريت، تشوف بيتك أو شغلك من موبايلك في أي وقت.",
-  price: 899,
-  oldPrice: 1450,
+  price: 1200,
+  oldPrice: 1988,
   badge: "الأكثر مبيعًا",
-  stockNote: "متبقي 7 قطع فقط بسعر العرض",
+  stockNote: "متبقي 32 قطع فقط بسعر العرض",
   shipping: "الدفع عند الاستلام + شحن مجاني لكل المحافظات",
   gallery: [
     { src: heroImg, alt: "كاميرا المراقبة الصغيرة في راحة اليد" },
