@@ -9,8 +9,8 @@ import appImg from "@/assets/camera-app.jpg";
 import boxImg from "@/assets/camera-box.jpg";
 
 export const site = {
-  brand: "سيكيور شوب",
-  tagline: "أجهزة حماية ذكية",
+  brand: "elsoooq",
+  tagline: "تسوق أونلاين بثقة",
   whatsapp: "201000000000", // رقم الواتساب بصيغة دولية بدون +
   phone: "01000000000",
   currency: "جنيه",
@@ -18,12 +18,20 @@ export const site = {
 
 /** 📞 شريط التواصل — عدّل الروابط والأسماء من هنا */
 export const contacts = {
-  title: "محتاج مساعدة؟ كلمنا",
+  title: "تواصل معنا",
+  subtitle: "فريق خدمة العملاء جاهز لمساعدتك",
   items: [
-    { id: "whatsapp", label: "واتساب", value: "201000000000", href: "https://wa.me/201000000000" },
-    { id: "facebook", label: "فيسبوك", value: "SecureShop", href: "https://facebook.com/" },
-    { id: "phone", label: "اتصال", value: "01000000000", href: "tel:+201000000000" },
+    { id: "whatsapp", label: "واتساب", description: "رد سريع على استفسارك", href: "https://wa.me/201000000000" },
+    { id: "facebook", label: "فيسبوك", description: "تابعنا لأحدث العروض", href: "https://facebook.com/" },
+    { id: "phone", label: "اتصال", description: "تحدث مباشرة مع أحد المختصين", href: "tel:+201000000000" },
   ],
+};
+
+/** 🎥 فيديو شرح المنتج على يوتيوب */
+export const video = {
+  title: "شاهد كاميرا المراقبة الصغيرة في العمل",
+  href: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg",
 };
 
 export const product = {
