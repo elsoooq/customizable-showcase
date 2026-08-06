@@ -53,7 +53,7 @@ export const variants = {
   label: "اختار الباكدج",
   options: [
     { id: "single", name: "كاميرا واحدة", extra: 0, note: "الأساسي" },
-    { id: "double", name: "كاميرتين", extra: 750, note: "وفّر 250 جنيه" },
+    { id: "double", name: "كاميرتين", extra: 750, note: "وفّر 149 جنيه" },
   ],
 };
 
