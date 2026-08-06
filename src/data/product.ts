@@ -10,7 +10,7 @@ import boxImg from "@/assets/camera-box.jpg";
 
 export const site = {
   brand: "elsoooq",
-  tagline: "تسوق أونلاين بثقة",
+  tagline: "ادفع عند الاستلام",
   whatsapp: "20102277100", // رقم الواتساب بصيغة دولية بدون +
   phone: "01022077100",
   currency: "جنيه",
@@ -30,7 +30,7 @@ export const contacts = {
 /** 🎥 فيديو شرح المنتج على يوتيوب */
 export const video = {
   title: "شاهد كاميرا المراقبة الصغيرة في العمل",
-  href: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  href: "https://youtu.be/iqkf6OOJ-ks?si=YegOxdjRODfYtyk5",
   thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg",
 };
 
@@ -103,8 +103,8 @@ export const specs = [
   { k: "زاوية التصوير", v: "140 درجة" },
   { k: "الرؤية الليلية", v: "حتى 8 متر" },
   { k: "الاتصال", v: "واي فاي 2.4G" },
-  { k: "الذاكرة", v: "تدعم حتى 128 جيجا" },
-  { k: "المقاس", v: "3.2 × 3.2 سم" },
+  { k: "الذاكرة", v: "تدعم حتى 32 جيجا" },
+  { k: "المقاس", v: "9 × 2 سم" },
 ];
 
 export const steps = [
