@@ -10,13 +10,12 @@ import { product, site, specs } from "@/data/product";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "كاميرا مراقبة صغيرة واي فاي HD | الدفع عند الاستلام" },
+      { title: `${product.name} | ${site.brand}` },
       {
         name: "description",
-        content:
-          "كاميرا مراقبة صغيرة بجودة HD ورؤية ليلية وبث مباشر على الموبايل. شحن مجاني والدفع عند الاستلام.",
+        content: `${product.subtitle} تسوق الآن من ${site.brand} مع الدفع عند الاستلام وشحن مجاني.`,
       },
-      { property: "og:title", content: "كاميرا مراقبة صغيرة واي فاي HD" },
+      { property: "og:title", content: `${product.name} | ${site.brand}` },
       {
         property: "og:description",
         content: "بث مباشر على موبايلك، رؤية ليلية — الدفع عند الاستلام وشحن مجاني.",
@@ -37,7 +36,7 @@ function Index() {
       <header className="mx-auto max-w-3xl px-4 py-5">
         <div className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-3">
           <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-ember text-xs font-extrabold text-primary-foreground">
-            SS
+            e
           </span>
           <span className="truncate text-sm font-extrabold">{site.brand}</span>
         </div>
@@ -95,6 +94,7 @@ function Index() {
           اطلب الآن — الدفع عند الاستلام
         </button>
 
+        <YouTubeCard />
         <ContactBar />
       </main>
 
