@@ -1,4 +1,3 @@
-import { ChevronLeft } from "lucide-react";
 import { contacts } from "@/data/product";
 
 /** لوجوهات التواصل الحقيقية (SVG) */
@@ -27,9 +26,24 @@ function PhoneLogo(props: React.SVGProps<SVGSVGElement>) {
 }
 
 const brands = {
-  whatsapp: { Logo: WhatsAppLogo, ring: "text-whatsapp", chip: "bg-whatsapp/15 ring-1 ring-whatsapp/30" },
-  facebook: { Logo: FacebookLogo, ring: "text-facebook", chip: "bg-facebook/15 ring-1 ring-facebook/30" },
-  phone: { Logo: PhoneLogo, ring: "text-call", chip: "bg-call/15 ring-1 ring-call/30" },
+  whatsapp: {
+    Logo: WhatsAppLogo,
+    ring: "text-whatsapp",
+    chip: "bg-whatsapp/15 ring-1 ring-whatsapp/30",
+    glow: "shadow-whatsapp/20",
+  },
+  facebook: {
+    Logo: FacebookLogo,
+    ring: "text-facebook",
+    chip: "bg-facebook/15 ring-1 ring-facebook/30",
+    glow: "shadow-facebook/20",
+  },
+  phone: {
+    Logo: PhoneLogo,
+    ring: "text-call",
+    chip: "bg-call/15 ring-1 ring-call/30",
+    glow: "shadow-call/20",
+  },
 } as const;
 
 export function ContactBar() {
@@ -37,12 +51,10 @@ export function ContactBar() {
     <section className="lux lux-amber gilt-line overflow-hidden rounded-3xl">
       <div className="border-b border-border/60 px-5 py-4 text-center">
         <h2 className="text-base font-extrabold">{contacts.title}</h2>
-        <p className="mt-1 text-xs text-muted-foreground">
-          فريق خدمة العملاء متاح للرد على استفسارك
-        </p>
+        <p className="mt-1 text-xs text-muted-foreground">{contacts.subtitle}</p>
       </div>
 
-      <div className="divide-y divide-border/60 sm:grid sm:grid-cols-3 sm:divide-x sm:divide-y-0 sm:divide-x-reverse">
+      <div className="grid grid-cols-3 gap-2 p-3">
         {contacts.items.map((c) => {
           const brand = brands[c.id as keyof typeof brands] ?? brands.whatsapp;
           const { Logo } = brand;
@@ -52,20 +64,19 @@ export function ContactBar() {
               href={c.href}
               target={c.href.startsWith("http") ? "_blank" : undefined}
               rel="noreferrer"
-              className="group flex items-center gap-3 px-5 py-4 transition-colors hover:bg-secondary sm:flex-col sm:gap-2 sm:py-6 sm:text-center"
+              className="group flex flex-col items-center justify-center gap-2 rounded-2xl bg-secondary/40 px-2 py-4 text-center transition-all hover:-translate-y-0.5 hover:bg-secondary hover:shadow-lg"
             >
               <span
-                className={`grid size-11 shrink-0 place-items-center rounded-2xl ${brand.chip} ${brand.ring} transition-transform group-hover:scale-105`}
+                className={`grid size-11 place-items-center rounded-2xl ${brand.chip} ${brand.ring} shadow-lg ${brand.glow} transition-transform group-hover:scale-110`}
               >
                 <Logo className="size-6" />
               </span>
-              <span className="min-w-0 flex-1">
-                <span className="block text-sm font-extrabold">{c.label}</span>
-                <span className="block truncate text-[11px] text-muted-foreground" dir="ltr">
-                  {c.value}
+              <span className="min-w-0">
+                <span className="block text-xs font-extrabold">{c.label}</span>
+                <span className="block truncate text-[10px] leading-tight text-muted-foreground">
+                  {c.description}
                 </span>
               </span>
-              <ChevronLeft className="size-4 shrink-0 text-muted-foreground sm:hidden" />
             </a>
           );
         })}
