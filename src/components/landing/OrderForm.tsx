@@ -45,7 +45,7 @@ export function OrderForm() {
       onSubmit={submit}
       className="space-y-5 rounded-3xl border border-border bg-card p-5 shadow-soft sm:p-7"
     >
-      <div>
+      <div className="pe-14">
         <h2 className="text-2xl">اطلب الآن — الدفع عند الاستلام</h2>
         <p className="mt-1 text-sm text-muted-foreground">
           املأ البيانات وهنبعت طلبك على واتساب فورًا للتأكيد.
